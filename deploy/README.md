@@ -4,6 +4,10 @@
 [Caddy](https://caddyserver.com), which handles HTTPS. Your app calls it from its server with a
 secret key; browsers never see the key.
 
+No VPS? [huggingface/](huggingface/) runs the same API on a free Hugging Face Space (it sleeps
+when unused), and [huggingface-docker/](huggingface-docker/) on a paid Docker Space. Each has
+its own README.
+
 **Size:** 4 vCPU and 8 GB RAM is comfortable (each worker holds the 440 MB model, about 1 GB in
 use). 2 vCPU works with `AFRICA_TTS_WORKERS=1`, more slowly.
 
